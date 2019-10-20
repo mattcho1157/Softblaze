@@ -1,0 +1,195 @@
+
+/*__________________________________general__________________________________*/
+
+.container {max-width: 760px;}
+.navbar-brand {height: 70px;}
+.navbar-toggle {margin-top: 18px;}
+.navbar-nav {margin: 0;}
+
+#current-page {color: #ff8898 !important}
+.navbar-nav li:hover {background-color: rgb(247, 247, 247);}
+.navbar-nav li a {
+	padding: 0px 15px;
+	margin: 0px;
+	line-height: 70px;
+	font-size: 14px;
+	color: rgb(21, 35, 54) !important;
+}
+
+.banner {
+	width: 100%;
+	height: 320px;
+	text-align: center;
+}
+
+.banner h1 {
+	position: relative;
+	top: 150px;
+	font: 300 50px 'Open Sans', sans-serif;
+	letter-spacing: 3px;
+	color: white;
+}
+
+h2 {
+	font: 300 35px 'Open Sans', sans-serif;
+	letter-spacing: 3px;
+	color: black;
+	text-align: center;
+	margin: 60px auto 40px auto;
+}
+
+.button {
+	border: 1px solid #ff8898;
+	color: #ff8898;
+	padding: 8px 30px;
+	transition: ease 0.5s;
+}
+
+.button:hover {
+	background-color: #ff8898;
+	color: white;
+	text-decoration: none;
+}
+
+#button-spec {border: 1px solid #6542f4; color: #6542f4; margin-top: 60px;}
+#button-spec:hover {background-color: #6542f4; color: white;}
+
+#button-warning {border: 1px solid red; color: red; margin-top: 30px;}
+#button-warning:hover {background-color: red; color: white;}
+
+.form-control {border: none; border-radius: 0;}
+.qty-select {border: 1px solid #ccc;}
+
+input[type=text], input[type=email], input[type=password] {
+	border-bottom: 1px solid grey;
+	box-shadow:none;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
+	border-bottom: 1px solid #ff8898;
+	box-shadow:none;
+}
+
+.alert {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	margin: 0;
+	width: 100%;
+	z-index: 9999; 
+	border-radius: 0px;
+}
+
+.close {
+	position: relative;
+	right: 0px !important;
+	float: left !important;
+	margin-right: 15px;
+}
+
+/*_________________________________index.php_________________________________*/
+
+.index-banner {
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	background: url('img/indexbanner.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.index-banner-content {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-32%);
+	left: 15%;
+}
+
+.index-banner-content img {
+	width: 350px;
+	border: solid 2px #ff8898;
+	padding: 25px 50px;
+}
+
+.index-banner-content h1 {
+	font: 300 45px 'Open Sans', sans-serif;
+	text-align: right;
+	letter-spacing: 3px;
+	width: 350px;
+	color: white;
+	margin: 40px auto 0 auto;
+}
+
+/*_______________________________products.php________________________________*/
+
+#products-banner {
+	background: url('img/productsbanner.jpg') no-repeat center top; 
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.products-section {width: 65%; margin: 30px auto;}
+.product {padding: 30px 30px 55px 30px; text-align: center;}
+.product img {width: 100%;}
+.product-price {font: 300 20px 'Open Sans', sans-serif; color: #ff8898;}
+
+/*_________________________________login.php_________________________________*/
+
+.login-section {width: 85%; margin: 60px auto;}
+
+/*________________________________account.php________________________________*/
+
+#account-banner {
+	background: url('img/accountbanner.jpg') no-repeat center center; 
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.account-section {width: 85%; margin: 20px auto;}
+.account-section > div {margin-bottom: 60px;}
+.account-section h2 {font-size: 30px;}
+.account-section label {margin-bottom: 9px;}
+
+/*_________________________________cart.php__________________________________*/
+
+#cart-banner {
+	background: url('img/cartbanner.jpg') no-repeat center center; 
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.cart-table {
+	width: 80%;
+	margin: 60px auto 20px auto;
+}
+
+.cart-table td, .cart-table th {
+	text-align: center;
+	vertical-align: middle !important;
+}
+
+.cart-table select {
+	width: 50px;
+	margin: 0 auto;
+}
+
+.cart-table select:focus {
+	border: 1px solid #ff8898;
+	box-shadow: none;
+}
+
+/*________________________________responsive_________________________________*/
+
+@media (max-width: 767px) {
+	.navbar-collapse {padding: 0;}
+	.navbar-nav li a {text-align: center; line-height: 40px;}
+	.index-banner-content {width: 100%; left: 0;}
+	.index-banner h1 {text-align: center;}
+	.products-section {width: 55%;}
+}
+
+
+
+@media (max-height: 450px) {
+	.index-banner {height: 450px;}
+	.index-banner-content {position: absolute; top: 210px;}
+}
